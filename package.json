@@ -4,11 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/mocha --recursive test"
   },
   "author": "Erik Erikson <erik.m.erikson@nordstrom.com>",
   "license": "MIT",
   "devDependencies": {
-    "quibble": "^0.5.1"
+    "mocha": "^4.0.1",
+    "quibble": "^0.5.3"
   }
 }
