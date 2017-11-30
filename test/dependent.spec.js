@@ -10,9 +10,6 @@ const dependency = quibble('../lib/dependency.js', { install: (arg) => { console
 const dependent = require('../lib/dependent.js')
 
 describe('dependent 1', () => {
-    afterEach(() => {
-        quibble.reset()
-    })
     it('replaces go', () => {
         return Promise.resolve()
             .then(() => { prefix = first})
@@ -21,3 +18,5 @@ describe('dependent 1', () => {
             .then(() => { dependent.go(2) })
     })
 })
+
+quibble.reset()
